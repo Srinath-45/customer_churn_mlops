@@ -33,3 +33,5 @@ artifacts/model/
 # Operating system
 .DS_Store
 Thumbs.db
+data/processed/
+artifacts/preprocessor/

@@ -1,0 +1,40 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python src/data/preprocess.py
+    deps:
+    - path: data/raw/dataset.csv
+      hash: md5
+      md5: 0f9de68e012bd3aed5fa7cdc9fc421af
+      size: 977501
+    - path: params.yaml
+      hash: md5
+      md5: 4718033bf2eaead4dd39f830cdd8f8af
+      size: 615
+    - path: src/data/preprocess.py
+      hash: md5
+      md5: ac1869344c7528f38a41fd5d04da3e0a
+      size: 3531
+    params:
+      params.yaml:
+        data:
+          raw_path: data/raw/dataset.csv
+          processed_dir: data/processed
+        preprocessing:
+          test_size: 0.2
+          random_state: 42
+          target_column: Churn
+          id_column: customerID
+    outs:
+    - path: artifacts/preprocessor/preprocessor.joblib
+      hash: md5
+      md5: 9c2195b52582bfb30733c3f942656589
+      size: 7412
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 2643cf8630bc736bbf771b30691b7e1a
+      size: 348887
+    - path: data/processed/train.csv
+      hash: md5
+      md5: 956d0d28634bea9541397581790cb577
+      size: 1390050

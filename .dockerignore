@@ -1,0 +1,17 @@
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.github/
+.dvc/cache/
+.ipynb_checkpoints/
+notebooks/
+logs/
+*.log
+mlruns/
+mlflow.db
+.pytest_cache/
+.vscode/
+.idea/

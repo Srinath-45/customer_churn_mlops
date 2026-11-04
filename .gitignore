@@ -1,37 +1,16 @@
-
-# Python virtual environments
-.venv/
-.venv*/
-venv/
-env/
-
 # Python cache
 __pycache__/
 *.py[cod]
-.pytest_cache/
 
-# Jupyter
-.ipynb_checkpoints/
+# Model artifacts tracked by DVC
+artifacts/models/
 
-# Environment variables and secrets
-.env
-.env.*
-
-# Logs
-logs/
-*.log
-
-# Generated model artifacts
-artifacts/model/
-
-# DVC cache
-.dvc/cache/
-
-# IDE
-.vscode/
-
-# Operating system
-.DS_Store
-Thumbs.db
-data/processed/
+# Generated model files
 artifacts/preprocessor/
+
+# Processed data tracked by DVC
+data/processed/
+
+# MLflow
+mlruns/
+mlflow.db
